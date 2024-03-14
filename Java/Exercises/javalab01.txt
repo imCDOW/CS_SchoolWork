@@ -1,0 +1,74 @@
+public class problem_01 {
+	public static void main(String[] args){
+		
+	double degreesCelcius = 10;	
+	 double degreesFahrenheit = (degreesCelcius * 1.8) + 32;
+	System.out.println("Degrees in fahrenheit is =" + degreesFahrenheit);
+	}		
+}
+
+
+inport java.util.Scanner;
+public class problem_02 {
+	public static void main(String[] args){
+		
+	double degreesCelcius = input.nextDouble();	
+	 double degreesFahrenheit = (degreesCelcius * 1.8) + 32;
+	 System.out.println("Degrees in fahrenheit is =" + degreesFahrenheit);
+	}		
+}
+
+
+public class problem_03 {
+	public static void main(String[] args){
+		
+		double exam1 = 90;
+		double exam2 = 90;
+		double exam3 = 90;
+		double exam4 = 90;
+		double exam5 = 90;
+		double examAverage = (exam1 + exam2 + exam3 + exam4 + exam5) / 5
+		
+		System.out.println("The average of exams 1, 2, 3, 4, and 5 are" + exam1 +exam2 + exam3 +exam4 + exam5);
+		System.out.println("The average of the 5 exams is =" + examAverage);
+	}
+}
+
+
+import java.util.Scanner;
+public class problem_04 {
+	public static void main(String[] args){
+		
+		double exam1 = input.nextDouble();
+		double exam2 = input.nextDouble();
+		double exam3 = input.nextDouble();
+		double exam4 = input.nextDouble();
+		double exam5 = input.nextDouble();
+		double examAverage = (exam1 + exam2 + exam3 + exam4 + exam5) / 5
+		
+		System.out.println("The average of exam 1, 2, 3, 4, and 5 are" + exam1 +exam2 + exam3 +exam4 + exam5);
+		System.out.println("The average of the 5 exams is =" + examAverage);
+	}
+}
+
+
+public class problem_05 {
+	public static void main(String[] args){
+		//I'm not sure if we have learned loops yet? I have decided to read ahead and look for help to learn loops.
+		int N = 5
+		for (int i = 1; i <= 20; i++;) {
+		System.out.print(N + " * " + i + " = " + N * i);
+		}
+	}
+}
+
+import java.util.Scanner;
+public class problem_06 {
+	public static void main(String[] args){
+
+		double N = input.nextDouble(); 
+				for (int i = 1; i <= 20; i++;) {
+				System.out.print(N + " * " + i + " = " + N * i);
+				}
+			}
+		}	

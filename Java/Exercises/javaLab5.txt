@@ -1,0 +1,137 @@
+Problem 1:
+import java.util.Scanner;
+public class SumOfArray {
+
+    public static void main(String[] args) {
+        int[] arr = new int[5];
+        int sum = 0;
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter 5 integer numbers: ");
+        
+        for (int i = 0; i < 5; i++) {
+            arr[i] = sc.nextInt();
+            sum += arr[i];
+        }
+        
+        System.out.println("Sum of 5 numbers: " + sum);
+        
+        sc.close();
+    }
+
+}
+----------------------------------------------------------------------------
+
+Problem 2:
+import java.util.Scanner;
+public class ArrayIndexing {
+
+    public static void main(String[] args) {
+        int[] arr = new int[5];
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter 5 integer numbers: ");
+        
+        for (int i = 0; i < 5; i++) {
+            arr[i] = sc.nextInt();
+        }
+        
+        System.out.println("Number stored on index 3: " + arr[3]);
+        
+        sc.close();
+    }
+
+}
+----------------------------------------------------------------------------
+
+Problem 3:
+import java.util.Scanner;
+public class LargestElement {
+
+    public static void main(String[] args) {
+        int[] arr = new int[5];
+        int largest = Integer.MIN_VALUE;
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter 5 integer numbers: ");
+        
+        for (int i = 0; i < 5; i++) {
+            arr[i] = sc.nextInt();
+            if (arr[i] > largest) {
+                largest = arr[i];
+            }
+        }
+        
+        System.out.println("Largest element in the array: " + largest);
+        
+        sc.close();
+    }
+
+}
+----------------------------------------------------------------------------
+
+Problem 4:
+import java.util.Scanner;
+public class SmallestElement {
+
+    public static void main(String[] args) {
+        int[] arr = new int[5];
+        int smallest = Integer.MAX_VALUE;
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter 5 integer numbers: ");
+        
+        for (int i = 0; i < 5; i++) {
+            arr[i] = sc.nextInt();
+            if (arr[i] < smallest) {
+                smallest = arr[i];
+            }
+        }
+        
+        System.out.println("Smallest element in the array: " + smallest);
+        
+        sc.close();
+    }
+
+}
+----------------------------------------------------------------------------
+
+Problem 5:
+import java.util.Scanner;
+public class SelectionSort {
+
+    public static void main(String[] args) {
+        int[] arr = new int[5];
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter 5 integer numbers: ");
+        
+        for (int i = 0; i < 5; i++) {
+            arr[i] = sc.nextInt();
+        }
+        
+        for (int i = 0; i < arr.length - 1; i++) {
+            int minIndex = i;
+            
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] < arr[minIndex]) {
+                    minIndex = j;
+                }
+            }
+            
+            int temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
+        }
+        
+        System.out.println("Sorted array:");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        
+----------------------------------------------------------------------------
